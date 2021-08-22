@@ -11,7 +11,7 @@ public:
     T Value;
     Node<T> * Next;
 
-    Node(T value);
+    explicit Node(T value);
 };
 
 template <typename T>

@@ -3,7 +3,7 @@
 #ifndef STACK_H
 #define STACK_H
 
-#include "../../Node/Node.h"
+#include "Node.h"
 
 template <typename T>
 class Stack
@@ -43,7 +43,7 @@ template <typename T>
 void Stack<T>::Push(T val)
 {
     // Create a new Node
-    Node<T> * node = new Node<T>(val);
+    auto * node = new Node<T>(val);
 
     // The Next pointer of this new node
     // will point to current m_top node

@@ -44,7 +44,7 @@ template <typename T>
 void Queue<T>::Enqueue(T val)
 {
     // Create a new Node
-    Node<T> * node = new Node<T>(val);
+    auto * node = new Node<T>(val);
 
     if(m_count == 0)
     {

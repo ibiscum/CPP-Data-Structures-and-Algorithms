@@ -19,19 +19,12 @@ include_directories(Chapter08/Hash_Table_SC/include)
 add_subdirectory(Chapter01)
 add_subdirectory(Chapter02)
 add_subdirectory(Chapter03)
+add_subdirectory(Chapter04)
 
 
 
 
-#        Chapter04/Bubble_Sort/Bubble_Sort.cpp
-#        Chapter04/Counting_Sort/Counting_Sort.cpp
-#        Chapter04/Insertion_Sort/Insertion_Sort.cpp
-#        Chapter04/Merge_Sort/Merge_Sort.cpp
-#        Chapter04/Quick_Sort/Quick_Sort.cpp
-#        Chapter04/Radix_Sort/Node.h
-#        Chapter04/Radix_Sort/Queue.h
-#        Chapter04/Radix_Sort/Radix_Sort.cpp
-#        Chapter04/Selection_Sort/Selection_Sort.cpp
+
 #        Chapter05/Binary_Search/Binary_Search.cpp
 #        Chapter05/Exponential_Search/main.cpp
 #        Chapter05/Interpolation_Search/Interpolation_Search.cpp

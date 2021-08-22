@@ -12,7 +12,7 @@ class DoublyNode
         DoublyNode<T> * Previous;
         DoublyNode<T> * Next;
 
-        DoublyNode(T value);
+        explicit DoublyNode(T value);
 };
 
 template <typename T>

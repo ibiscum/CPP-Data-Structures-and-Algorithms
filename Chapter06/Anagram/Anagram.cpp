@@ -11,7 +11,7 @@ bool IsAnagram(
     string str1,
     string str2)
 {
-    // Anagram is not case sensitive
+    // Anagram is not case-sensitive,
     // so we convert all characters
     // to uppercase
     transform(
@@ -25,7 +25,7 @@ bool IsAnagram(
         str2.begin(),
         ::toupper);
 
-    // Anagram does not care about space
+    // Anagram does not care about space,
     // so we remove all spaces if any
     str1.erase(
         remove(

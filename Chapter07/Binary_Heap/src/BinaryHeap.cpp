@@ -5,7 +5,7 @@ BinaryHeap::BinaryHeap()
     // Clear the vector
     vect.clear();
 
-    // Root will be index 1
+    // Root will be indexed 1,
     // so we set index 0 to be 'dummy'
     vect.push_back(-1);
 

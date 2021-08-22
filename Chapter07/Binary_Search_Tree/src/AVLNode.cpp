@@ -102,9 +102,9 @@ BSTNode * AVL::RotateRight(BSTNode * node)
 BSTNode * AVL::Insert(BSTNode * node, int key)
 {
     // If AVL tree doesn't exist
-    // create a new node as root
+    // create a new node as root,
     // or it's reached when
-    // there's no any child node
+    // there's no child node,
     // so we can insert a new node here
     if (node == NULL)
     {

@@ -9,7 +9,7 @@ using namespace std;
 bool IsPalindrome(
     string str)
 {
-    // Palindrome is not case sensitive
+    // Palindrome is not case-sensitive,
     // so we convert all characters
     // to uppercase
     transform(
@@ -18,7 +18,7 @@ bool IsPalindrome(
         str.begin(),
         ::toupper);
 
-    // Palindrome does not care about space
+    // Palindrome does not care about space,
     // so we remove all spaces if any
     str.erase(
         remove(

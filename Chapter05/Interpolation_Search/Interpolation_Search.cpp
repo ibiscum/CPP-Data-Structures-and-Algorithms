@@ -41,7 +41,7 @@ int InterpolationSearch(
         }
     }
 
-    // Just in case no any value found
+    // Just in case no value found
     return -1;
 }
 

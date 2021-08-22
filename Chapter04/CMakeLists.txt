@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.20)
+project(CPP_Data_Structures_and_Algorithms_ch04)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(Radix_Sort)
+
+add_executable(ch04_bubble_sort Bubble_Sort/Bubble_Sort.cpp)
+add_executable(ch04_counting_sort Counting_Sort/Counting_Sort.cpp)
+add_executable(ch04_insertion_sort Insertion_Sort/Insertion_Sort.cpp)
+add_executable(ch04_merge_sort Merge_Sort/Merge_Sort.cpp)
+add_executable(ch04_quick_sort Quick_Sort/Quick_Sort.cpp)
+add_executable(ch04_radix_sort Radix_Sort/Radix_Sort.cpp)
+add_executable(ch04_selection_sort Selection_Sort/Selection_Sort.cpp)

@@ -8,9 +8,9 @@ using namespace std;
 
 void RadixSort(int arr[], int arrSize)
 {
-    // Create ten buckets for each digits
+    // Create ten buckets for each digit
     // (0 - 9)
-    Queue<int> * buckets = new Queue<int>[10];
+    auto * buckets = new Queue<int>[10];
 
     // Find the largest element
     int largestElement = arr[0];
@@ -21,7 +21,7 @@ void RadixSort(int arr[], int arrSize)
     }
 
     // Iterate through every digit
-    // using exponetial (10^exp) to find the digit
+    // using exponential (10^exp) to find the digit
     for(int exp = 1; largestElement/exp > 0; exp *= 10)
     {
         // Iterate the array's elements
@@ -50,7 +50,7 @@ void RadixSort(int arr[], int arrSize)
         }
     }
 
-    return;
+    //return;
 }
 
 int main()

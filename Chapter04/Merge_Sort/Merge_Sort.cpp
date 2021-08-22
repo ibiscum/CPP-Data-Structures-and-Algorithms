@@ -29,12 +29,12 @@ void Merge(
     // Index of merged array
     int mergedIndex = 0;
 
-    // Merge the two subarrays
+    // Merge the two sub-arrays
     while (leftIndex <= middleIndex && rightIndex <= endIndex)
     {
         if(arr[leftIndex] <= arr[rightIndex])
         {
-            // Store the left subarray's element
+            // Store the left sub-arrays' element
             // if it's lower than the right one
             tempArray[mergedIndex] = arr[leftIndex];
 
@@ -43,7 +43,7 @@ void Merge(
         }
         else
         {
-            // Store the right subarray's element
+            // Store the right sub-arrays' element
             // if it's lower than the left one
             tempArray[mergedIndex] = arr[rightIndex];
 
@@ -55,7 +55,7 @@ void Merge(
         ++mergedIndex;
     }
 
-    // If there're any remaining element in left subarray
+    // If there are any remaining elements in left subarray
     // that is not stored to merged array yet
     while (leftIndex <= middleIndex)
     {
@@ -68,7 +68,7 @@ void Merge(
         ++mergedIndex;
     }
 
-    // If there're any remaining element in right subarray
+    // If there are any remaining element in right sub-array
     // that is not stored to merged array yet
     while (rightIndex <= endIndex)
     {
@@ -91,7 +91,7 @@ void Merge(
     // Remove the temporary array tempArray
     delete[] tempArray;
 
-    return;
+    //return;
 }
 
 void MergeSort(
@@ -118,7 +118,7 @@ void MergeSort(
         Merge(arr, startIndex, middleIndex, endIndex);
     }
 
-    return;
+    //return;
 }
 
 int main()

@@ -35,7 +35,7 @@ int TernarySearch(
         {
             return middleRightIndex;
         }
-        // If val is at the are of the first third
+        // If val is of the first third
         // then perform another Ternary Search to this subarray
         // arr[startIndex ... middleLeftIndex - 1]
         else if(arr[middleLeftIndex] > val)
@@ -70,7 +70,7 @@ int TernarySearch(
         }
     }
 
-    // Just in case no any value found
+    // Just in case no value found
     return -1;
 }
 

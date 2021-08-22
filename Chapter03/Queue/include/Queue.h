@@ -3,7 +3,7 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-#include "../../Node/Node.h"
+#include "Node.h"
 
 template <typename T>
 class Queue

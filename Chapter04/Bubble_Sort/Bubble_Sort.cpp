@@ -29,7 +29,7 @@ void BubbleSort(int arr[], int arrSize)
             }
         }
 
-        // After iteration, the last element has been sorted
+        // After iteration, the last element has been sorted,
         // so it will be ignored in the next iteration
         --unsortedElements;
     }

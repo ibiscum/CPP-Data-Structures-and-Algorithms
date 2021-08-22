@@ -26,7 +26,7 @@ string DecimalToBinaryString(
         // Initialize the division quot
         dv.quot = decimalNumber;
 
-        // Perform these procedure
+        // Perform this procedure
         // until the quot is 0
         do
         {

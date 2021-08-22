@@ -41,7 +41,7 @@ int BinarySearch(
         }
     }
 
-    // Just in case no any value found
+    // Just in case no value found
     return -1;
 }
 
@@ -70,7 +70,7 @@ int ExponentialSearch(
     }
 
     // After find the blockIndex,
-    // perfom Binary Search to the sub array
+    // perform Binary Search to the sub array
     // defined by the blockIndex
     // arr[blockIndex / 2 .... blockIndex or arrSize]
     return BinarySearch(

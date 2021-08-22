@@ -28,7 +28,7 @@ void SelectionSort(int arr[], int arrSize)
                 minIndex = j;
         }
 
-        // Swap the the first unsorted element
+        // Swap the first unsorted element
         // with the minimum value
         swap(arr[i], arr[minIndex]);
     }
