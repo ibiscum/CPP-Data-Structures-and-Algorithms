@@ -1,4 +1,4 @@
-// Do-While
+// Do_While
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

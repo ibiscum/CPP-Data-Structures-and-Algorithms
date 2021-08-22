@@ -55,9 +55,9 @@ template <typename T>
 void Deque<T>::EnqueueFront(T val)
 {
     // Create a new Node
-    DoublyNode<T> * node = new DoublyNode<T>(val);
+    auto * node = new DoublyNode<T>(val);
 
-    // The current m_front will no longer become a m_front
+    // The current m_front will no longer become an m_front
     // so the Next pointer of the new Node will
     // point to the current m_front
     node->Next = m_front;
@@ -92,9 +92,9 @@ void Deque<T>::EnqueueBack(T val)
     }
 
     // Create a new Node
-    DoublyNode<T> * node = new DoublyNode<T>(val);
+    auto * node = new DoublyNode<T>(val);
 
-    // The current m_back will no longer become a m_back
+    // The current m_back will no longer become an m_back
     // so the Next pointer of the current m_back will
     // point to the new node
     m_back->Next = node;

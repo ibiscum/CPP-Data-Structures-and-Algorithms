@@ -1,4 +1,4 @@
-// If_ElseIf
+// If_Else_If
 #include <iostream>
 
 using namespace std;

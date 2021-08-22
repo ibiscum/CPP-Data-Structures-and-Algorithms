@@ -1,4 +1,4 @@
-// If_ElseIf_2.cbp
+// If_Else_If_2.cbp
 #include <iostream>
 
 using namespace std;

@@ -1,6 +1,4 @@
-// Project: Array.cbp
-// File   : Array.cpp
-
+// Array
 #include <iostream>
 
 using namespace std;
