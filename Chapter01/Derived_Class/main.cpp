@@ -1,5 +1,6 @@
-// Derived_Class.cbp
+// Derived_Class
 #include <iostream>
+#include <utility>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ private:
     string m_name;
 
 public:
-    Animal(string name) : m_name(name)
+    explicit Animal(string name) : m_name(std::move(name))
     {
 
     }
@@ -28,7 +29,7 @@ class Dog : public Animal
 {
 public:
     // Forward the constructor arguments
-    Dog(string name) : Animal(name) {}
+    explicit Dog(string name) : Animal(std::move(name)) {}
 
     // here we implement the interface
     string MakeSound() override

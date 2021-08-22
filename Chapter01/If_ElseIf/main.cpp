@@ -1,4 +1,4 @@
-// If_ElseIf.cbp
+// If_ElseIf
 #include <iostream>
 
 using namespace std;

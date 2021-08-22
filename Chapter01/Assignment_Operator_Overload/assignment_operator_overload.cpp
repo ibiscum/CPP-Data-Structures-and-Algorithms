@@ -1,4 +1,4 @@
-// Function_Templates
+// Assignment_Operator_Overload
 #include <iostream>
 #include <utility>
 
@@ -33,10 +33,9 @@ public:
     explicit Dog(string name) : Animal(std::move(name)) {}
 
     // Copy assignment operator overloading
-    void operator = (const Dog &D)
-    {
+    void operator = (const Dog &D ) {
          m_name = D.m_name;
-    }
+      }
 
     // here we implement the interface
     string MakeSound() override
@@ -46,40 +45,15 @@ public:
 
 };
 
-class Cat : public Animal
-{
-public:
-    // Forward the constructor arguments
-    explicit Cat(string name) : Animal(std::move(name)) {}
-
-    // Copy assignment operator overloading
-    void operator = (const Cat &D)
-    {
-         m_name = D.m_name;
-    }
-
-    // here we implement the interface
-    string MakeSound() override
-    {
-        return "meow-meow!";
-    }
-
-};
-
-template<typename T>
-void GetNameAndMakeSound(T& theAnimal)
-{
-    cout << theAnimal.GetName() << " goes ";
-    cout << theAnimal.MakeSound() << endl;
-}
-
 int main()
 {
     Dog dog = Dog("Bulldog");
-    GetNameAndMakeSound(dog);
+    cout << dog.GetName() << " is barking: ";
+    cout << dog.MakeSound() << endl;
 
-    Cat cat = Cat("Persian Cat");
-    GetNameAndMakeSound(cat);
+    Dog dog2 = dog;
+    cout << dog2.GetName() << " is barking: ";
+    cout << dog2.MakeSound() << endl;
 
     return 0;
 }

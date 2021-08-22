@@ -1,4 +1,4 @@
-// Enum.cbp
+// Enum
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -119,16 +119,14 @@ int GenerateRandomNumber(int min, int max)
 int main()
 {
     // set initial seed value to system clock
-    srand(static_cast<unsigned int>(time(0)));
+    srand(static_cast<unsigned int>(time(nullptr)));
 
     // generate random suit and element card
     int iSuit = GenerateRandomNumber(0, 3);
     int iElement = GenerateRandomNumber(0, 12);
 
-    CardSuits suit = static_cast<CardSuits>(
-        iSuit);
-    CardElements element = static_cast<CardElements>(
-        iElement);
+    auto suit = static_cast<CardSuits>(iSuit);
+    auto element = static_cast<CardElements>(iElement);
 
     cout << "Your card is ";
     cout << GetElementString(element);

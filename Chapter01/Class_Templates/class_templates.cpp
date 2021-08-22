@@ -1,4 +1,4 @@
-// Function_Templates
+// Class_Templates
 #include <iostream>
 #include <utility>
 
@@ -73,13 +73,31 @@ void GetNameAndMakeSound(T& theAnimal)
     cout << theAnimal.MakeSound() << endl;
 }
 
+template <typename T>
+class AnimalTemplate
+{
+private:
+    T m_animal;
+
+public:
+    explicit AnimalTemplate(T animal) : m_animal(animal) {}
+
+    void GetNameAndMakeSound()
+    {
+        cout << m_animal.GetName() << " goes ";
+        cout << m_animal.MakeSound() << endl;
+    }
+};
+
 int main()
 {
     Dog dog = Dog("Bulldog");
-    GetNameAndMakeSound(dog);
+    AnimalTemplate<Dog> dogTemplate(dog);
+    dogTemplate.GetNameAndMakeSound();
 
     Cat cat = Cat("Persian Cat");
-    GetNameAndMakeSound(cat);
+    AnimalTemplate<Cat> catTemplate(cat);
+    catTemplate.GetNameAndMakeSound();
 
     return 0;
 }
