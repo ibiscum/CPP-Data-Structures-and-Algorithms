@@ -10,9 +10,9 @@ BST::BST() : root(NULL)
 BSTNode * BST::Insert(BSTNode * node, int key)
 {
     // If BST doesn't exist
-    // create a new node as root
+    // create a new node as root,
     // or it's reached when
-    // there's no any child node
+    // there's no child node,
     // so we can insert a new node here
     if(node == NULL)
     {
@@ -144,7 +144,7 @@ int BST::Successor(BSTNode * node)
     {
         return FindMin(node->Right);
     }
-    // If no any right subtree
+    // If no right subtree
     else
     {
         BSTNode * parentNode = node->Parent;
@@ -191,7 +191,7 @@ int BST::Predecessor(BSTNode * node)
     {
         return FindMax(node->Left);
     }
-    // If no any left subtree
+    // If no left subtree
     else
     {
         BSTNode * parentNode = node->Parent;

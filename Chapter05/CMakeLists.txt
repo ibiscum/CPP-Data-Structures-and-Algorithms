@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+project(CPP_Data_Structures_and_Algorithms_ch04)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(ch05_binary_search Binary_Search/Binary_Search.cpp)
+add_executable(ch05_exponential_search Exponential_Search/main.cpp)
+add_executable(ch05_interpolation_search Interpolation_Search/Interpolation_Search.cpp)
+add_executable(ch05_jump_search Jump_Search/Jump_Search.cpp)
+add_executable(ch05_linear_search Linear_Search/Linear_Search.cpp)
+add_executable(ch05_sublist_search Sublist_Search/Sublist_Search.cpp)
+add_executable(ch05_ternary_search Ternary_Search/Ternary_Search.cpp)

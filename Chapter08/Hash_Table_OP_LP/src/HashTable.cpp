@@ -124,7 +124,7 @@ void HashTable::PrintHashTable()
     for(int i = 0 ; i < currentSize; ++i)
     {
         // Just print the element
-        // if it exist
+        // if it exists
         if(arr[i] != NULL && arr[i]->Key != -1)
         {
             cout << "Cell: " << i;

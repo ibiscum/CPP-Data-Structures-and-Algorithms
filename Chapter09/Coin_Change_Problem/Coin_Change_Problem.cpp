@@ -26,7 +26,7 @@ void MinimalChangeCoin(double changingNominal)
            result.push_back(denom[i]);
         }
 
-        // If there's no any denomination
+        // If there's no denomination
         // that can be given just exit the loop
         if (changingNominal < denom[0])
             break;

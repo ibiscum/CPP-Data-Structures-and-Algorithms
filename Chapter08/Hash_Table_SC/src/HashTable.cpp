@@ -73,7 +73,7 @@ void HashTable::Remove(int key)
     // Get the cell
     auto &cell = tableList[hashKey];
 
-    // Tranverse the chaining node (linked list)
+    // Traverse the chaining node (linked list)
     for (auto it = cell.begin(); it != cell.end(); ++it)
     {
         // if the key is found

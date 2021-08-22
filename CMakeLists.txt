@@ -20,18 +20,12 @@ add_subdirectory(Chapter01)
 add_subdirectory(Chapter02)
 add_subdirectory(Chapter03)
 add_subdirectory(Chapter04)
+add_subdirectory(Chapter05)
+add_subdirectory(Chapter06)
+add_subdirectory(Chapter07)
+add_subdirectory(Chapter08)
+add_subdirectory(Chapter09)
 
-
-
-
-
-#        Chapter05/Binary_Search/Binary_Search.cpp
-#        Chapter05/Exponential_Search/main.cpp
-#        Chapter05/Interpolation_Search/Interpolation_Search.cpp
-#        Chapter05/Jump_Search/Jump_Search.cpp
-#        Chapter05/Linear_Search/Linear_Search.cpp
-#        Chapter05/Sublist_Search/Sublist_Search.cpp
-#        Chapter05/Ternary_Search/Ternary_Search.cpp
 #        Chapter06/Anagram/Anagram.cpp
 #        Chapter06/BinaryString_To_Decimal/BinaryString_To_Decimal.cpp
 #        Chapter06/Characters_Array/Characters_Array.cpp
